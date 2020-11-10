@@ -66,7 +66,6 @@ function LineGraph() {
     const chartData = [];
     let lastDataPoint;
 
-    // data[inputType].forEach(date => {
     for(let date in data[inputType]) {
       if(lastDataPoint) {
         const newDataPoint = {
@@ -82,7 +81,6 @@ function LineGraph() {
 
   return (
     <div> 
-      <h1>I'm graph</h1>
       {data?.length > 0 && (
         <Line
         options={options}
